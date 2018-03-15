@@ -6,7 +6,7 @@
 
 Gem::Specification.new do |s|
   s.name = "standalone_migrations"
-  s.version = "5.2.3"
+  s.version = "5.2.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
@@ -59,8 +59,8 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<rake>, [">= 10.0"])
-      s.add_runtime_dependency(%q<activerecord>, ["< 5.2.0", ">= 4.2.7"])
-      s.add_runtime_dependency(%q<railties>, ["< 5.2.0", ">= 4.2.7"])
+      s.add_runtime_dependency(%q<activerecord>, ["< 5.3.0", ">= 4.2.7"])
+      s.add_runtime_dependency(%q<railties>, ["< 5.3.0", ">= 4.2.7"])
     else
       s.add_dependency(%q<rake>, [">= 10.0"])
       s.add_dependency(%q<activerecord>, ["< 5.3.0", ">= 4.2.7"])
